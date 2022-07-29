@@ -23,8 +23,8 @@ class AtListActivity : AppCompatActivity() {
         for (i in 0..30) {
             userList.add(User(i, "昵称$i"))
         }
-        val atListAdapter = AtListAdapter(this, userList).apply {
-            rvUserList.adapter = this
+        val atListAdapter = AtListAdapter(this, userList).also {
+            rvUserList.adapter = it
         }
 
         rvUserList.setOnItemClickListener { _, _, position, id ->
