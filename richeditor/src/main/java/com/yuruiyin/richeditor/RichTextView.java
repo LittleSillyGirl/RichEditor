@@ -369,8 +369,10 @@ public class RichTextView extends AppCompatTextView {
                 .into(new CustomTarget<Drawable>() {
                     @Override
                     public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+                        // 图片加载完成之后，替换占位图片，当然这里会有一个问题，如果异步加载过慢，那么用户如果删除了占位图片如何操作。
                         SpannableString spanStringContent = new SpannableString(IMAGE_SPAN_PLACEHOLDER + "\n");
                         spanStringContent.setSpan(getBlockImageSpan(resource, blockSpanBean), 0, spanStringContent.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                        //所以这里用的是替换，而不再是append了
                         getEditableText().replace(start, end, spanStringContent);
                     }
 
