@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.yuruiyin.richeditor.RichTextView
+        android:id="@+id/richTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="5dp"
+        android:maxLength="20000"
+        android:minHeight="350dp"
+        android:paddingLeft="@dimen/editor_padding_left"
+        android:paddingTop="23dp"
+        android:paddingRight="@dimen/editor_padding_right"
+        android:paddingBottom="70dp"
+        android:textColor="#171717"
+        android:textColorHint="#aaaaaa"
+        android:textSize="16sp"
+        app:text_headline_text_size="20dp"
+        app:text_image_radius="5dp"
+        app:text_show_gif_mark="true"
+        app:text_show_long_image_mark="true"
+        app:text_show_video_mark="true"
+        app:text_video_mark_resource_id="@mipmap/editor_video_mark_icon"
+        tools:ignore="RtlHardcoded" />
+
+</ScrollView>

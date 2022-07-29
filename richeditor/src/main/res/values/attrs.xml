@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--富文本编辑器-->
+    <declare-styleable name="RichEditText">
+        <!-- 是否显示视频标识图标 -->
+        <attr name="editor_show_video_mark" format="boolean" />
+        <!-- 视频图标资源id -->
+        <attr name="editor_video_mark_resource_id" format="reference" />
+        <!-- 是否显示gif标识图标 -->
+        <attr name="editor_show_gif_mark" format="boolean" />
+        <!-- 是否显示长图标识 -->
+        <attr name="editor_show_long_image_mark" format="boolean" />
+        <!-- 图片和视频圆角大小 -->
+        <attr name="editor_image_radius" format="dimension" />
+        <!-- 正文中标题字体大小 -->
+        <attr name="editor_headline_text_size" format="dimension" />
+        <!--是否显示删除图片-->
+        <attr name="editor_show_image_del" format="boolean" />
+    </declare-styleable>
+
+    <!--富文本TextView-->
+    <declare-styleable name="RichTextView">
+        <!-- 是否显示视频标识图标 -->
+        <attr name="text_show_video_mark" format="boolean" />
+        <!-- 视频图标资源id -->
+        <attr name="text_video_mark_resource_id" format="reference" />
+        <!-- 是否显示gif标识图标 -->
+        <attr name="text_show_gif_mark" format="boolean" />
+        <!-- 是否显示长图标识 -->
+        <attr name="text_show_long_image_mark" format="boolean" />
+        <!-- 图片和视频圆角大小 -->
+        <attr name="text_image_radius" format="dimension" />
+        <!-- 正文中标题字体大小 -->
+        <attr name="text_headline_text_size" format="dimension" />
+    </declare-styleable>
+
+</resources>
